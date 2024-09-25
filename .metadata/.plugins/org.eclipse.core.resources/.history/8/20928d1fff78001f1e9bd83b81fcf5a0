@@ -1,0 +1,11 @@
+package pac;
+
+public class WindowsCheckbox implements Checkbox{
+
+	@Override
+	public void paint() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

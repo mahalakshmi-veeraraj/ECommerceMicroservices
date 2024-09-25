@@ -1,0 +1,11 @@
+package pac;
+
+public class Directory implements FileSystem{
+
+	@Override
+	public void ls() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

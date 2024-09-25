@@ -1,0 +1,13 @@
+package com.maha.ecommerce.payment_service.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.razorpay.RazorpayClient;
+
+@Configuration
+public class RazorpayClientConfig {
+	
+	public RazorpayClient getRazorpayClient() {
+		new RazorpayClient("secret_key_id", "secret_key");
+	}
+}

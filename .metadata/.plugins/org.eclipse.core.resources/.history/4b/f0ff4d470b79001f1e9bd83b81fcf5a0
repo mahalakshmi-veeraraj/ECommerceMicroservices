@@ -1,0 +1,12 @@
+package pac;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DBConnection {
+	Connection mysqlConnection;
+
+	public DBConnection() {
+		mysqlConnection = DriverManager.getConnection("url", "username", "password");
+	}
+}

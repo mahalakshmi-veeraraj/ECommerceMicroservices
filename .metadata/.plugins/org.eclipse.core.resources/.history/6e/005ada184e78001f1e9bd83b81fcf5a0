@@ -1,0 +1,5 @@
+package templateMethodDesignPattern;
+
+public class PayToFriend extends PaymentFlow {
+
+}

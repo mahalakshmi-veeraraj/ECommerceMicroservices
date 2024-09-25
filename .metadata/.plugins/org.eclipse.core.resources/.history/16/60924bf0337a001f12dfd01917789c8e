@@ -1,0 +1,8 @@
+package scenario1;
+
+public class EmployeeClient {
+	public void getEmployeeDetails() {
+		EmployeeFacade employeeFacade = new EmployeeFacade();
+		
+	}
+}

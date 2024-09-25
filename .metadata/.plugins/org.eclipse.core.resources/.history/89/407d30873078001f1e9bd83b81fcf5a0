@@ -1,0 +1,13 @@
+package client;
+
+import invoker.AirConditioner;
+import receiver.RemoteControl;
+
+public class AppMain {
+	public static void main(String[] args) {
+		RemoteControl remoteControl = new RemoteControl();
+		
+		AirConditioner ac = new AirConditioner();
+		
+	}
+}

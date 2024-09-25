@@ -1,0 +1,11 @@
+package pac;
+
+public class TreeBreatheImplementation implements BreatheImplementor{
+
+	@Override
+	public void breatheProcess() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

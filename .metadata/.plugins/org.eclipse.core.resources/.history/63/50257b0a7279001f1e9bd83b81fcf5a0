@@ -1,0 +1,11 @@
+package pac;
+
+public class ExtraCheese extends ToppingDecorator{
+
+	@Override
+	public int cost() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

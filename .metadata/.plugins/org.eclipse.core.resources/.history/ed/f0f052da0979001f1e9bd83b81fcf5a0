@@ -1,0 +1,3 @@
+Category: Creational Design Pattern.
+- Manages the pool of reusable objects like DBConnection object.
+- Borrow from the pool -> use it -> then return it back to pool.

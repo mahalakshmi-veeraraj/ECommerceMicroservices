@@ -1,0 +1,16 @@
+package interpreter;
+
+public class NumberTerminalExpression implements AbstractExpression{
+	private String stringVal;
+	
+	public NumberTerminalExpression(String strVal) {
+		this.stringVal = strVal;
+	}
+	
+	@Override
+	public int interpret(Context context) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

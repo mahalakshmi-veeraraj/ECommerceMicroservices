@@ -1,0 +1,8 @@
+package memento;
+
+public class ConfigurationOriginator {
+	public ConfigurationMemento createMemento(int height, int width) {
+		
+		return 
+	}
+}

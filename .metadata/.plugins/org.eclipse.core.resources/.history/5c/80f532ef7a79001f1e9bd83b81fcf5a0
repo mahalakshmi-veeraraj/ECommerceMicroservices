@@ -1,0 +1,13 @@
+package pac;
+
+public class Directory implements FileSystem {
+	private String directoryName;
+
+	public Directory(String name) {
+		this.directoryName = name;
+	}
+
+	@Override
+	public void ls() {
+	}
+}

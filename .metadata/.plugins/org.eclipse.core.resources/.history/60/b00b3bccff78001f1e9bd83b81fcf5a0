@@ -1,0 +1,14 @@
+package pac;
+
+public class Client {
+	public static void main(String[] args) {
+		GUIFactory guiFactory;
+		String os = "windows";
+		if (os.equals("windows")) {
+			guiFactory = new WindowsFactory();
+		}
+		else if (os.equals("mac")) {
+			guiFactory = new MacFactory();
+		}
+	}
+}

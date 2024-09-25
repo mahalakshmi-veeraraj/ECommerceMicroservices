@@ -1,0 +1,7 @@
+package templateMethodDesignPattern;
+
+public abstract class PaymentFlow {
+	public abstract void validateRequest();
+	public abstract void calculateFees();
+	
+}

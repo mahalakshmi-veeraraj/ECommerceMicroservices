@@ -1,0 +1,12 @@
+package memento;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ConfigurationCareTaker {
+	private List<ConfigurationMemento> history = new ArrayList<>();
+	
+	public void addMemento(ConfigurationMemento configurationMemento) {
+		history.add(configurationMemento);
+	}
+}

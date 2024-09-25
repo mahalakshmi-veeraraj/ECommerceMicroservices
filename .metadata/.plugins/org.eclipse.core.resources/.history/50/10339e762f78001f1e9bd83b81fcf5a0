@@ -1,0 +1,10 @@
+package invoker;
+
+public class AirConditioner {
+	private boolean turnOn = false;
+	private int temperature = 0;
+
+	public void turnOn() {
+
+	}
+}

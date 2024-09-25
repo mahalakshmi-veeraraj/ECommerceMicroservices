@@ -1,0 +1,13 @@
+package adapter;
+
+import adaptee.WeightMachine;
+
+public class WeightMachineAdapterImpl implements WeightMachineAdapter {
+	private WeightMachine weightMachine;
+	
+	@Override
+	public double getWeightInKg() {
+
+		return 0;
+	}
+}

@@ -1,0 +1,9 @@
+package adapter;
+
+public class WeightMachineAdapterImpl implements WeightMachineAdapter {
+	@Override
+	public double getWeightInKg() {
+
+		return 0;
+	}
+}

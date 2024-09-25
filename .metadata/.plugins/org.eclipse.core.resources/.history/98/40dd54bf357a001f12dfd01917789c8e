@@ -1,0 +1,22 @@
+package scenario2;
+
+public class OrderFacade {
+	private ProductDAO productDAO;
+	private Invoice invoice;
+	private Payment payment;
+	private SendNotification sendNotification;
+
+	public OrderFacade() {
+		productDAO = new ProductDAO();
+		invoice = new Invoice();
+		payment = new Payment();
+		sendNotification = new SendNotification();
+	}
+
+	public void createOrder() {
+		Product product = productDAO.getProduct(1122);
+		payment.makePayment();
+		invoice.generateInvoice();
+		sendNotification.sendNotification();
+	}
+}

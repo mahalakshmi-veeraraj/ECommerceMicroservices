@@ -1,0 +1,12 @@
+package com.maha.ecommerce.payment_service.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PaymentService {
+	public String initiatePayment(Long orderId, Long orderAmount) {
+		// Make a call to Payment Gateway to generate the payment link.
+		
+		return null;
+	}
+}

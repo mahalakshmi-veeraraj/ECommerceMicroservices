@@ -1,0 +1,5 @@
+package pac;
+
+public enum ArithmeticOperationTypes {
+
+}

@@ -1,0 +1,10 @@
+package com.maha.ecommerce.payment_service.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PaymentService {
+	public String initiatePayment() {
+		
+	}
+}

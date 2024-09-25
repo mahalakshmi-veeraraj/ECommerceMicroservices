@@ -1,0 +1,13 @@
+package pac;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class DBConnectionPoolManager {
+	List<DBConnection> freeConnectionsInPool = new ArrayList<DBConnection>();
+	List<DBConnection> connectionsCurrentlyInUse = new ArrayList<DBConnection>();
+	
+	public DBConnectionPoolManager() {
+		
+	}
+}

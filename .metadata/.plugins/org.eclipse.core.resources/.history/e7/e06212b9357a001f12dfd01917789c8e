@@ -1,0 +1,15 @@
+package scenario2;
+
+public class OrderFacade {
+	private ProductDAO productDAO;
+	private Invoice invoice;
+	private Payment payment;
+	private SendNotification sendNotification;
+	
+	public OrderFacade() {
+		productDAO = new ProductDAO();
+		invoice = new Invoice();
+		payment = new Payment();
+		sendNotification = new SendNotification();
+	}
+}

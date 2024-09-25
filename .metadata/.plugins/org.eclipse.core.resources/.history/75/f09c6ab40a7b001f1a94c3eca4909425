@@ -1,0 +1,11 @@
+package com.maha.ecommerce.payment_service.paymentGateway;
+
+public class StripePaymentGateway implements PaymentGateway{
+
+	@Override
+	public String generatePaymentLink(Long id, Long amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

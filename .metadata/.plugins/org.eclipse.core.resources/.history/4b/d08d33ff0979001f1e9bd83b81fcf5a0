@@ -1,0 +1,8 @@
+Category: Creational Design Pattern.
+- Manages the pool of reusable objects like DBConnection object.
+- Borrow from the pool -> use it -> then return it back to pool.
+
+Advantages:
+1. Reduce the overhead of creating and destroying the frequently required object (generally 
+resource intensive objects).
+2. 

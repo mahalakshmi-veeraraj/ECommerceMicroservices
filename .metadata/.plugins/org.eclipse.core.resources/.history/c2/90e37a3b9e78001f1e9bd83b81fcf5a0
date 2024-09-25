@@ -1,0 +1,16 @@
+package memento;
+
+public class ConfigurationOriginator {
+	private int height;
+	private int width;
+
+	public ConfigurationMemento createMemento(int height, int width) {
+
+		return new ConfigurationMemento(height, width);
+	}
+
+	public void restoreConfigurationMemento(ConfigurationMemento restoredConfigurationMemento) {
+		this.height = restoredConfigurationMemento.getHeight();
+		this.width = restoredConfigurationMemento.getWidth();
+	}
+}

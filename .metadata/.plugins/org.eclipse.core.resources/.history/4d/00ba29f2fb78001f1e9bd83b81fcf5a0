@@ -1,0 +1,5 @@
+package pac;
+
+public class Circle implements Shape {
+
+}

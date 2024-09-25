@@ -1,0 +1,16 @@
+package interpreter;
+
+public class BinaryNonTerminalExpression implements AbstractExpression{
+	private AbstractExpression leftExpression;
+	private AbstractExpression rightExpression;
+
+	public BinaryNonTerminalExpression(AbstractExpression leftExpression, AbstractExpression rightExpression) {
+		this.leftExpression = leftExpression;
+		this.rightExpression = rightExpression;
+	}
+
+	@Override
+	public int interpret(Context context) {
+		
+	}
+}

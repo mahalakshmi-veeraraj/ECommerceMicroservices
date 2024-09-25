@@ -1,0 +1,8 @@
+package com.maha.ecommerce.payment_service.services;
+
+import jakarta.websocket.server.ServerEndpoint;
+
+@ServerEndpoint
+public class PaymentService {
+
+}

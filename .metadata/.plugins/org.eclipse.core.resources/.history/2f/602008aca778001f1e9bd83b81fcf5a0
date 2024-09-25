@@ -1,0 +1,21 @@
+package mediator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Auction implements AuctionMediator {
+
+	private List<Colleague> colleagues = new ArrayList<>();
+
+	@Override
+	public void addBidder(Colleague bidder) {
+		colleagues.add(bidder);
+	}
+
+	@Override
+	public void placeBird(Colleague bidder, int bidAmount) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

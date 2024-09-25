@@ -1,0 +1,11 @@
+package pac;
+
+public class MBAStudentBuilder extends StudentBuilder{
+
+	@Override
+	public StudentBuilder setSubjects() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

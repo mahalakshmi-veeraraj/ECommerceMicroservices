@@ -1,0 +1,11 @@
+package pac;
+
+public class VehicleFactory {
+	public Vehicle getVehicleObject(String typeOfVehicle) {
+		if (typeOfVehicle.equalsIgnoreCase("car")) {
+			return new Car();
+		}
+
+		return new NullVehicle();
+	}
+}

@@ -1,0 +1,27 @@
+package pac;
+
+public class ArithmeticExpression implements Expression {
+	private ArithmeticOperationTypes operation;
+	private Expression leftExpression;
+	private Expression rightExpression;
+
+	public ArithmeticExpression(String operation, Expression leftExpression, Expression rightExpression) {
+		this.operation = operation;
+		this.leftExpression = leftExpression;
+		this.rightExpression = rightExpression;
+	}
+
+	@Override
+	public int evaluate() {
+		switch (operation) {
+		case ADD: {
+			
+			
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + operation);
+		}
+		return 0;
+	}
+
+}

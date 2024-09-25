@@ -1,0 +1,11 @@
+package pac;
+
+public class WindowsButton implements Button{
+
+	@Override
+	public void paint() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package iterator;
+
+import java.util.List;
+
+public class BookIterator implements Iterator {
+	private List<Book> books;
+	private int index = 0;
+
+	@Override
+	public boolean hasNext() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

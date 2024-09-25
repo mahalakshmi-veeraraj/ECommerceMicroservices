@@ -1,0 +1,7 @@
+package pac;
+
+import java.nio.file.FileSystem;
+
+public class File extends FileSystem{
+
+}

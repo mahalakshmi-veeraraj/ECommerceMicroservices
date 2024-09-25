@@ -1,0 +1,10 @@
+package client;
+
+import receiver.RemoteControl;
+
+public class AppMain {
+	public static void main(String[] args) {
+		RemoteControl remoteControl = new RemoteControl();
+		
+	}
+}

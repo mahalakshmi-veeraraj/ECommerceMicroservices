@@ -1,0 +1,8 @@
+package mediator;
+
+public class Client {
+	public static void main(String[] args) {
+		AuctionMediator auctionMediator = new Auction();
+		
+	}
+}

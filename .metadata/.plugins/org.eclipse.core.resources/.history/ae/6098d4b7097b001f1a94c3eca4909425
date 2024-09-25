@@ -1,0 +1,5 @@
+package com.maha.ecommerce.payment_service.dto;
+
+public class IntitatePaymentRequestDto {
+	private Long orderId;
+}

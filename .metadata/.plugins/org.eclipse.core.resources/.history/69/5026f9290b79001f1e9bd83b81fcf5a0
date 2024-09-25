@@ -1,0 +1,11 @@
+package pac;
+
+import java.sql.Connection;
+
+public class DBConnection {
+	Connection mysqlConnection;
+	
+	public DBConnection() {
+		
+	}
+}

@@ -1,0 +1,14 @@
+package com.maha.ecommerce.payment_service.paymentGateway;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class RazorpayPaymentGateway implements PaymentGateway{
+
+	@Override
+	public String generatePaymentLink(Long id, Long amount) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

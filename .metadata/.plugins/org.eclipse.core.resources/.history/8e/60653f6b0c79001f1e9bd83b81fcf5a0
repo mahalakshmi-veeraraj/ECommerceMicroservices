@@ -1,0 +1,34 @@
+package pac;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class DBConnectionPoolManager {
+	List<DBConnection> freeConnectionsInPool = new ArrayList<DBConnection>();
+	List<DBConnection> connectionsCurrentlyInUse = new ArrayList<DBConnection>();
+	int INITIAL_POOL_SIZE = 3;
+	int MAX_POOL_SIZE = 6;
+
+	public DBConnectionPoolManager() throws SQLException {
+		for (int i = 0; i < INITIAL_POOL_SIZE; i++) {
+			freeConnectionsInPool.add(new DBConnection());
+		}
+	}
+
+	public DBConnection getDBConnection() throws SQLException {
+		if (freeConnectionsInPool.isEmpty() && connectionsCurrentlyInUse.size() < MAX_POOL_SIZE) {
+			freeConnectionsInPool.add(new DBConnection());
+			System.out.println("creating new connection and putting into the pool, free pool size: "
+					+ freeConnectionsInPool.size());
+		} else if (freeConnectionsInPool.isEmpty() && connectionsCurrentlyInUse.size() >= MAX_POOL_SIZE) {
+			System.out.println("can not create new DBConnection, as max limit reached");
+			return null;
+		}
+
+		DBConnection dbConnection = freeConnectionsInPool.remove(freeConnectionsInPool.size() - 1);
+		connectionsCurrentlyInUse.add(dbConnection);
+		System.out.println("adding db connection into use pool, size: " + connectionsCurrentlyInUse.size());
+		return dbConnection;
+	}
+}

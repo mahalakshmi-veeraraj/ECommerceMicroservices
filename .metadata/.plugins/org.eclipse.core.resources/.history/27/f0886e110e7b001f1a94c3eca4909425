@@ -1,0 +1,5 @@
+package com.maha.ecommerce.payment_service.paymentGateway;
+
+public interface PaymentGateway {
+	String generatePaymentLink(Long id, Long amount);
+}

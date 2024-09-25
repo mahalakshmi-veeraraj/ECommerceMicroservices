@@ -1,0 +1,1 @@
+1. First create user database before starting the application. 

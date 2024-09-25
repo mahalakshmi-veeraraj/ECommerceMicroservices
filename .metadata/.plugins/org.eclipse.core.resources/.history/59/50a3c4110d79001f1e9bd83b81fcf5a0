@@ -1,0 +1,16 @@
+package pac;
+
+public class Client {
+	public static void main(String[] args) {
+		DBConnectionPoolManager poolManager = new DBConnectionPoolManager();
+
+		DBConnection connection1 = poolManager.getDBConnection();
+		DBConnection connection2 = poolManager.getDBConnection();
+		DBConnection connection3 = poolManager.getDBConnection();
+		DBConnection connection4 = poolManager.getDBConnection();
+		DBConnection connection5 = poolManager.getDBConnection();
+		DBConnection connection6 = poolManager.getDBConnection();
+		poolManager.getDBConnection();
+		poolManager.releaseConnection(connection6);
+	}
+}

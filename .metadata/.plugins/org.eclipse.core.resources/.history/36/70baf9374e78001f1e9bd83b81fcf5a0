@@ -1,0 +1,30 @@
+package templateMethodDesignPattern;
+
+public class PayToFriend extends PaymentFlow {
+
+	@Override
+	public void validateRequest() {
+
+		System.out.println("Validate logic PayToFriend");
+	}
+
+	@Override
+	public void calculateFees() {
+		
+		System.out.println("");
+
+	}
+
+	@Override
+	public void debitAmount() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void creditAmount() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

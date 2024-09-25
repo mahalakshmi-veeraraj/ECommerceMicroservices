@@ -1,0 +1,23 @@
+package command;
+
+import invoker.AirConditioner;
+
+public class TurnOffACCommand implements Command {
+	private AirConditioner ac;
+
+	public TurnOffACCommand(AirConditioner ac) {
+		this.ac = ac;
+	}
+
+	@Override
+	public void execute() {
+		ac.turnOn();
+	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

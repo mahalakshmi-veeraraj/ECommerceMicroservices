@@ -1,0 +1,12 @@
+package memento;
+
+public class Client {
+	public static void main(String[] args) {
+		ConfigurationCareTaker configurationCareTaker = new ConfigurationCareTaker();
+
+		ConfigurationOriginator configurationOriginator = new ConfigurationOriginator(5, 10);
+
+		ConfigurationMemento snapshot1 = configurationOriginator.createMemento();
+
+	}
+}

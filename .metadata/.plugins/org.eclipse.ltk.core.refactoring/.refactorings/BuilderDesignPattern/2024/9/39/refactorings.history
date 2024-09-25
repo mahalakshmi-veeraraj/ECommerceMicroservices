@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;pac.EngineeringStudent&apos; to &apos;EngineeringStudentBuilder&apos;&#x0D;&#x0A;- Original project: &apos;BuilderDesignPattern&apos;&#x0D;&#x0A;- Original element: &apos;pac.EngineeringStudent&apos;&#x0D;&#x0A;- Renamed element: &apos;pac.EngineeringStudentBuilder&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EngineeringStudent&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;pac{EngineeringStudent.java[EngineeringStudent" matchStrategy="1" name="EngineeringStudentBuilder" qualified="false" references="true" similarDeclarations="false" stamp="1727025172300" textual="false" version="1.0"/>
+</session>

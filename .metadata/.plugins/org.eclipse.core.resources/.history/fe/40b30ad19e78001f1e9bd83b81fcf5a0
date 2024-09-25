@@ -1,0 +1,8 @@
+package memento;
+
+public class Client {
+	public static void main(String[] args) {
+		ConfigurationCareTaker configurationCareTaker = new ConfigurationCareTaker();
+		
+	}
+}

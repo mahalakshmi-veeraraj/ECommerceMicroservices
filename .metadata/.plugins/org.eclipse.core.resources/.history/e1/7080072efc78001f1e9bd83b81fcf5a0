@@ -1,0 +1,9 @@
+package pac;
+
+public class ShapeFactory {
+	public static Shape getShape(String input) {
+		if (input.equalsIgnoreCase("circle")) {
+			return new Circle();
+		}
+	}
+}

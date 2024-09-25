@@ -1,0 +1,12 @@
+package pac;
+
+public abstract class LivingThings {
+	private BreatheImpmentor breatheImpmentor;
+
+	public LivingThings(BreatheImpmentor breatheImpmentor) {
+		this.breatheImpmentor = breatheImpmentor;
+	}
+
+	public abstract void breatheProcess();
+
+}

@@ -1,0 +1,13 @@
+package pac;
+
+public class ShapeFactory {
+	public static Shape getShape(String input) {
+		switch (input) {
+		case "CIRCLE": {
+			return new Circle();
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + input);
+		}
+	}
+}

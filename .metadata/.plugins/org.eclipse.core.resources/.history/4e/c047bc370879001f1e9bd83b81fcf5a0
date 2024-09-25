@@ -1,0 +1,9 @@
+package pac;
+
+public class Client {
+	public static void main(String[] args) {
+		StudentBuilder engineeringStudentBuilder = new EngineeringStudentBuilder();
+		Director director = new Director(engineeringStudentBuilder);
+		director.createStudent();
+	}
+}

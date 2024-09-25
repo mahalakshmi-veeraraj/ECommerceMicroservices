@@ -1,0 +1,6 @@
+spring.application.name=: E-Commerce Payment Service
+
+#This is also open to viewable
+#Create these variables in environment variables.
+razorpay.key.id = secret_key_id 
+razorpat.key = secret_key

@@ -1,0 +1,8 @@
+package scenario2;
+
+public class OrderFacade {
+	private Invoice invoice;
+	private Payment payment;
+	private SendNotification sendNotification;
+	
+}

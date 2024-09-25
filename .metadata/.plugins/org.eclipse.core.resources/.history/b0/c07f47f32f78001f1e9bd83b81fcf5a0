@@ -1,0 +1,20 @@
+package command;
+
+import invoker.AirConditioner;
+
+public class TurnOffACCommand implements Command {
+	private AirConditioner ac;
+
+	
+	@Override
+	public void execute() {
+		
+	}
+
+	@Override
+	public void undo() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

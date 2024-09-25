@@ -1,0 +1,17 @@
+package mediator;
+
+public class Auction implements AuctionMediator{
+
+	@Override
+	public void addBidder(Colleague bidder) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void placeBird(Colleague bidder, int bidAmount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package pac;
+
+public class Tree {
+	public Dog(BreatheImplementor breatheImplementor) {
+		super(breatheImplementor);
+	}
+
+	@Override
+	public void breatheProcess() {
+		this.getBreatheImplementor().breatheProcess();
+	}
+}

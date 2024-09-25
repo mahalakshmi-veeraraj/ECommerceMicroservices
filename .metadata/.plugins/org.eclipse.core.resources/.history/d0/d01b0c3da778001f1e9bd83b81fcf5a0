@@ -1,0 +1,23 @@
+package mediator;
+
+public class Bidder implements Colleague{
+
+	@Override
+	public void placeBid(int bidAmount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void receiveBisNotification(int bidAmount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

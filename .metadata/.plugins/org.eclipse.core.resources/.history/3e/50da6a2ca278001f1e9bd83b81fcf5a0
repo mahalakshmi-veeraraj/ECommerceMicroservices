@@ -1,0 +1,11 @@
+package interpreter;
+
+public class NumberTerminalExpression implements AbstractExpression{
+
+	@Override
+	public int interpret(Context context) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

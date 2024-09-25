@@ -1,0 +1,42 @@
+Creational Design Pattern - Helps in creation of objects.
+public class Student {
+	int rollNumber; // mandatory field.
+	int age; // optional field.
+	String name; // optional field.
+	String fatherName; // optional field.
+	String motherName; // optional field.
+	List<String> subjects; // optional field.
+	String mobileNumber; // optional field.
+	
+	public Student(int rollNumber, int age, String name, String fatherName, String motherName, List<String> subjects, String mobileNumber) {
+		this.rollNumber = rollNumber;
+		this.age = age;
+		this.name = name;
+		this.fatherName = fatherName;
+		this.motherName = motherName;
+		this.subjects = subjects;
+		this.mobileNumber = mobileNumber;
+	}
+	// The problem in the above constructor is that The constructor itself big.
+	// To solve the above problem we will be creating multiple parameterized constructor with different different parameters.
+	public Student(int rollNumber, int age) {
+		this.rollNumber = rollNumber;
+		this.age = age;
+	}
+	public Student(int rollNumber, int age, String name) {
+		this.rollNumber = rollNumber;
+		this.age = age;
+		this.name = name;
+	}
+	public Student(int rollNumber, String fatherName, String motherName) {
+		this.rollNumber = rollNumber;
+		this.fatherName = fatherName;
+		this.motherName = motherName;
+	}
+	// The problem in the above solution is that the number of constructor is become huge.
+	// Another problem is that.
+	// Suppose you want the constructor with the parameters such as rollNumber, name, motherName.
+	// Can you be able to create it? No. Becuase there exists another constructor which have the same
+	// kind of constructor like the number of paramters, and the type of all the parameters are all same.
+	
+}

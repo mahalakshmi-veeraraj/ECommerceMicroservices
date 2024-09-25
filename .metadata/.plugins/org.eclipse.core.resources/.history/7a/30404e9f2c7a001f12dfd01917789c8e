@@ -1,0 +1,20 @@
+package pac;
+
+public class ArithmeticExpression implements Expression {
+	private String operation;
+	private Expression leftExpression;
+	private Expression rightExpression;
+
+	public ArithmeticExpression(String operation, Expression leftExpression, Expression rightExpression) {
+		this.operation = operation;
+		this.leftExpression = leftExpression;
+		this.rightExpression = rightExpression;
+	}
+
+	@Override
+	public int evaluate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

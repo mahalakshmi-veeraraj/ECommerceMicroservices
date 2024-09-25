@@ -1,0 +1,9 @@
+package pac;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class RoboticFactory {
+	private static Map<String, IRobot> hashMap = new HashMap<String, IRobot>();
+	
+}

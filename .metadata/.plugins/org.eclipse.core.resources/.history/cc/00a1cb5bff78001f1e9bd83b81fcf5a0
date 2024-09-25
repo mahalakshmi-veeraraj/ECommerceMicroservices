@@ -1,0 +1,17 @@
+package pac;
+
+public class WindowsFactory implements GUIFactory {
+
+	@Override
+	public Button createButton() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Checkbox createCheckbox() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

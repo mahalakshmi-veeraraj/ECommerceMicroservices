@@ -1,0 +1,9 @@
+package scenario1;
+
+public class EmployeeFacade {
+	private EmployeeDAO employeeDAO;
+
+	public EmployeeFacade(EmployeeDAO employeeDAO) {
+		this.employeeDAO = employeeDAO;
+	}
+}

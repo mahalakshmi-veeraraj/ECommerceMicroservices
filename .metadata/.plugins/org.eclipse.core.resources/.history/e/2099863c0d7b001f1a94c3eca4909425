@@ -1,0 +1,3 @@
+spring.application.name=: E-Commerce Payment Service
+razorpay.key.id = secret_key_id 
+razorpat.key = 

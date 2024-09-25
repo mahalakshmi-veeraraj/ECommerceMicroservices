@@ -1,0 +1,21 @@
+package pac;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class RoboticFactory {
+	private static Map<String, IRobot> hashMap = new HashMap<String, IRobot>();
+	public static IRobot createRobot(String robotType) {
+		if (hashMap.containsKey(robotType)) {
+			return hashMap.get(robotType);
+		}
+		else {
+			if (robotType.equals("HUMANOID")) {
+				
+			}
+			else if (robotType.equals("ROBOTICDOG")) {
+				
+			}
+		}
+	}
+}

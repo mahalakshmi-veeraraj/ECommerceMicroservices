@@ -1,0 +1,13 @@
+package pac;
+
+public class HumanoidRobot implements IRobot{
+	private String type;
+	private Sprites sprites;
+	
+	@Override
+	public void display(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

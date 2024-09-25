@@ -1,0 +1,7 @@
+package pac;
+
+public enum ArithmeticOperationTypes {
+	ADD,
+	MULTIPLY,
+	SUBTRACT, DIVIVSION
+}

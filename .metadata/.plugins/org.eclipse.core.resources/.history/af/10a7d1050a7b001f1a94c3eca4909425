@@ -1,0 +1,5 @@
+package com.maha.ecommerce.payment_service.services;
+
+public class PaymentService {
+
+}

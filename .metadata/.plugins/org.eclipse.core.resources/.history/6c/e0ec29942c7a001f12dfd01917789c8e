@@ -1,0 +1,11 @@
+package pac;
+
+public class ArithmeticExpression implements Expression{
+
+	@Override
+	public int evaluate() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

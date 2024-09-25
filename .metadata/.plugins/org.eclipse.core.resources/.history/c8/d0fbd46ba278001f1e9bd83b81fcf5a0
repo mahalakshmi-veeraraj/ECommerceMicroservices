@@ -1,0 +1,13 @@
+package interpreter;
+
+public class MultiplyNonTerminalExpression implements AbstractExpression{
+	private AbstractExpression leftExpression;
+	private AbstractExpression rightExpression;
+
+	public MultiplyNonTerminalExpression(AbstractExpression leftExpression, AbstractExpression rightExpression) {
+		this.leftExpression = leftExpression;
+		this.rightExpression = rightExpression;
+	}
+	
+	
+}

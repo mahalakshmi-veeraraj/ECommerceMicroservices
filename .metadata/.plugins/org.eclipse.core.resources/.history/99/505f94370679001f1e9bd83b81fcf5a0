@@ -1,0 +1,15 @@
+package pac;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class EngineeringStudentBuilder extends StudentBuilder {
+
+	@Override
+	public void setSubjects() {
+		List<String> subjects = new ArrayList<String>();
+
+		this.subjects = subjects;
+	}
+
+}

@@ -1,0 +1,21 @@
+package pac;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Directory implements FileSystem {
+	private String directoryName;
+	private List<FileSystem> files;
+
+	public Directory(String name) {
+		this.directoryName = name;
+		files = new ArrayList<>();
+	}
+
+	@Override
+	public void ls() {
+		for (FileSystem fileSystem : files) {
+			fileSystem.ls();
+		}
+	}
+}

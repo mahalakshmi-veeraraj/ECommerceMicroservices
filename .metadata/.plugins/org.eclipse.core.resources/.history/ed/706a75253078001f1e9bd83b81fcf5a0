@@ -1,0 +1,8 @@
+package receiver;
+
+import java.util.Stack;
+
+public class RemoteControl {
+	Stack<Com>
+	
+}

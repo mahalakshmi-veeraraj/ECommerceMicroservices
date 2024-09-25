@@ -1,0 +1,19 @@
+package client;
+
+import command.Command;
+import command.TurnOffACCommand;
+import command.TurnOnACCommand;
+import invoker.AirConditioner;
+import receiver.RemoteControl;
+
+public class AppMain {
+	public static void main(String[] args) {
+		RemoteControl remoteControl = new RemoteControl();
+		
+		AirConditioner ac = new AirConditioner();
+		
+		Command turnOnACCommand = new TurnOnACCommand(ac);
+		Command turnOffACCommand = new TurnOffACCommand(ac);
+		
+	}
+}
