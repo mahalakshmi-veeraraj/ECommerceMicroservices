@@ -98,7 +98,7 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public ProductDto getProductById(Long id) {
-		ProductDto cachedProductDto = (ProductDto) redisTemplate.opsForHash().get("PRODUCTS", id);
+		ProductDto cachedProductDto = (ProductDto) redisTemplate.opsForHash().get("PRODUCTS", "PRODUCTS_" + id);
 		if (cachedProductDto != null) {
 			return cachedProductDto;
 		}
@@ -108,7 +108,7 @@ public class ProductServiceImpl implements ProductService {
 		/*
 		 * Id : Key Map Name : PRODUCTS Value : Product Object
 		 */
-		redisTemplate.opsForHash().put("PRODUCTS", "PRODUCTS+" + id, productDto);
+		redisTemplate.opsForHash().put("PRODUCTS", "PRODUCTS_" + id, productDto);
 		return productDto;
 	}
 
