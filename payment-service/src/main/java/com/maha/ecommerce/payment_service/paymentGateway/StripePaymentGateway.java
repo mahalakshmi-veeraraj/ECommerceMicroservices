@@ -19,7 +19,7 @@ public class StripePaymentGateway implements PaymentGateway{
 	@Override
 	public String generatePaymentLink(Long id, Long amount) {
 		// Call the Stripe API to generate the payment link.
-				Stripe.apiKey = stripeSecretKey;
+		Stripe.apiKey = stripeSecretKey;
 
 		PriceCreateParams priceParams = PriceCreateParams.builder().setCurrency("INR").setUnitAmount(1000L).build();
 
