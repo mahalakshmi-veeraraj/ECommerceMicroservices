@@ -28,7 +28,9 @@ public class ProductServiceImpl implements ProductService {
 	private ProductRepository productRepository;
 	@Autowired
 	private CategoryRepository categoryRepository;
-
+	@Autowired
+	private RedisTemplate<String, Object> redisTemplate;
+	
 	@Override
 	public Page<ProductDto> getAllProducts(int pageNumber, int pageSize) {
 		Page<Product> productPage = productRepository
@@ -96,8 +98,18 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public ProductDto getProductById(Long id) {
+		ProductDto cachedProductDto = (ProductDto) redisTemplate.opsForHash().get("PRODUCTS", id);
+		if (cachedProductDto != null) {
+			return cachedProductDto;
+		}
 
-		return ProductDto.covert(productRepository.findById(id).get());
+		ProductDto productDto = ProductDto.covert(productRepository.findById(id).get());
+		// Store the data inside the Redis.
+		/*
+		 * Id : Key Map Name : PRODUCTS Value : Product Object
+		 */
+		redisTemplate.opsForHash().put("PRODUCTS", "PRODUCTS+" + id, productDto);
+		return productDto;
 	}
 
 }
