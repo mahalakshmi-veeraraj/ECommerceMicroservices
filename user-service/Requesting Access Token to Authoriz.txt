@@ -1,0 +1,18 @@
+Requesting Access Token to Authorization Server:
+
+Auth Type: OAuth.
+
+Add Authorization data to: Request Headers.
+
+Token Header Prefix: Bearer.
+
+Configure New Token:
+1. Token Name: token-23-09-2024
+2. Grant Type: Authorization Code.
+3. Callback URL: https://oauth.pstmn.io/v1/callback
+4. Auth URL: http://localhost:4141/oauth2/authorize
+5. Access Token URL: http://localhost:4141/oauth2/token
+6. Client ID: oidc-client
+7. Client Secret: secret
+8. Scope: ADMIN
+9. Client Authentication: Send as Basic Auth Header.
